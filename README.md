@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites respond to the size of the browser at any given point. Adaptive websites adapt to the width of the browser at a specific points ( the website is only concerned about the browser being a specific width, at which point it adapts the layout).
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing for the smallest specifications — the best achievable by design- and then going up to highest resolutions. Or in other words design a website for the smallest mobile devices possible and then scale upwards to adapt to desktop computers.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+this makes the default font size for your entire website 10px (assuming the browser’s default font size is 16px,
+it makes the math easier when you’re working with relative font sizes(rem). 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax.
+Pre-processing always involved another language. Sass, LESS, Stylus.  And you write in that language to process it to CSS. 
+Pre-processors used for all the things CSS couldn’t do. preprocessors will add some features: Variables, Mixins, Nesting 
+These features make the CSS structure more readable and easier to maintain.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I enjoyed using variable and mixins. Variables make code easier to maintain by giving control to those values from a single location. Mixins allow  to embed all the properties of a class into another class by simply including the class name as one of its properties. It’s just like variables, but for whole classes. Also mixins can be made parametric, meaning they can take arguments to enhance their utility.
+Using math operators in LESS  can be tricky , because how units are handled. LESS will assume the first unit 	you use is what you want out, ignoring further units. (width: 10px + 2rem; // == 12px)
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
