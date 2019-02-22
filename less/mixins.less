@@ -1,1 +1,40 @@
 // Mixins Here
+
+// Paragraph mixin
+
+.text-style(){
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.bordered() {
+    border-top: 1px solid @main-border-color;
+}
+
+
+
+//// Button parametric mixin
+
+.custom-button(@width: 28%, @bg-color: @btn-bg-color, @font-color: white) {
+
+    width: @width;
+    text-align: center;
+    background-color: @bg-color;
+    border-radius: 6px;
+    padding: 8px 2%;
+    font-size: 1.7rem;
+    color: @font-color;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: @font-color;
+      color: @bg-color;
+    }
+  
+    @media @phone {
+        width: 95%;
+        font-size: 18px;
+        height: 38px;
+    }
+}
