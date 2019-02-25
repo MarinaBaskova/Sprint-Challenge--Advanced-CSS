@@ -1,1 +1,38 @@
 // Navigation code here
+
+.main-nav { 
+
+    .nav-top {
+        width: 100%;
+        background: @nav-bg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid @nav-border;
+        h1 {
+            padding-top: 14px;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        width: 44%;
+        
+         @media @phone {
+            justify-content: space-between;
+            width: 80%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.5rem;
+            &:hover {
+             color: @nav-border;
+        }
+    }
+}
